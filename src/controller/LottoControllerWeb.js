@@ -63,8 +63,8 @@ function printLottoResultsAndProfitRate(lottoMachine, money) {
 function inputWinningAndBounusNumbers(lottoMachine) {
   const array = new Array(6).fill(0);
   const extractionWinningNumbers = array.map((_, idx) => document.getElementById(`winningNumber${idx + 1}`).value);
-  const inputBonusNumber = document.getElementById('bonusNumber').value;
   const inputWinningNumber = extractionWinningNumbers.filter((num) => num.trim() !== '');
+  const inputBonusNumber = document.getElementById('bonusNumber').value;
   lottoMachine.winningLotto = inputWinningNumber.join(',');
   lottoMachine.bonusNumber = inputBonusNumber;
 }
