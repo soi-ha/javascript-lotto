@@ -28,12 +28,11 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font:
+    var(--default-bold) var(--default-font) / 24px 'Roboto',
+    sans-serif;
   color: var(--black-color);
-  font-size: var(--default-font);
-  font-weight: var(--default-bold);
   background-color: var(--light-gray-color);
-  line-height: 24px;
   letter-spacing: 0.5px;
 }
 
@@ -41,4 +40,9 @@ body #app {
   position: relative;
   min-height: 100vh;
   width: 100%;
+}
+
+button {
+  border: none;
+  background-color: transparent;
 }
